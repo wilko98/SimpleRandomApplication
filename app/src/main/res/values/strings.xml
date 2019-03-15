@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">amirSimpleApp</string>
+    <string name="mod_1_rb">Mod 1</string>
+    <string name="mod_2_rb">Mod 2</string>
+    <string name="mod_3_rb">Mod 3</string>
+    <string name="get_result_btn">Randomize</string>
+    <string name="menu_main_state">Main</string>
+    <string name="menu_mods">Mods</string>
+</resources>
