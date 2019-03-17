@@ -12,4 +12,10 @@
         android:icon="@drawable/ic_menu_black_24dp"
         android:title="@string/menu_mods"
         />
+    <item
+        android:id="@+id/myLogs"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="@string/myLogs"
+        />
 </menu>
