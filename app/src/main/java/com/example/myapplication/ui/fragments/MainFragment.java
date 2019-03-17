@@ -49,7 +49,7 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         mBtnRandomize.setOnClickListener(v->{
             MyLog log = new MyLog();
-            log.setId(mStorage.getLastId());
+//            log.setId(mStorage.getLastId());
             log.setTime(Calendar.getInstance().getTime().toString());
             switch (mPreferences.getInt("mod",1)){
                 case 1:

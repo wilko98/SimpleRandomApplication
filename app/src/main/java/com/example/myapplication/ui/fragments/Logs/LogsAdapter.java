@@ -33,6 +33,7 @@ public class LogsAdapter extends BaseAdapter {
         mLogTextView.setText((log.getId()+1)+") "+log.getResult()+"\n"+log.getTime());
         mDeleteButton.setOnClickListener(v1 -> ((ApplicationSingleton)
                 v1.getContext().getApplicationContext()).getmStorage().deleteLog(log));
+        notifyDataSetChanged();
 
         return v;
     }
