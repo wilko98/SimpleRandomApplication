@@ -22,7 +22,6 @@ public class LogsAdapter extends BaseAdapter {
         this.mListOfLogs = mListOfLogs;
     }
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) parent.getContext()
@@ -34,6 +33,7 @@ public class LogsAdapter extends BaseAdapter {
         mLogTextView.setText(log.getId()+") "+log.getResult()+"\n"+log.getTime());
         mDeleteButton.setOnClickListener(v1 -> ((ApplicationSingleton)
                 v1.getContext().getApplicationContext()).getmStorage().deleteLog(log));
+
         return v;
     }
 
