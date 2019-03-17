@@ -14,7 +14,7 @@ public class ApplicationSingleton extends Application {
     @Override
     public void onCreate() {
         final SimpleDatabase database = Room.databaseBuilder(this,SimpleDatabase.class,"simple_database")
-                .fallbackToDestructiveMigration()
+                .allowMainThreadQueries()
                 .build();
         mStorage = new Storage(database.getSimpleDao());
         mSharedPreferences = getSharedPreferences(BuildConfig.PREFS_KEY, MODE_PRIVATE);

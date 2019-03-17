@@ -1,15 +1,12 @@
 package com.example.myapplication.ui;
 
-import android.content.SharedPreferences;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import com.example.myapplication.R;
 import com.example.myapplication.common.SingleFragmentActivity;
-import com.example.myapplication.ui.fragments.LogsFragment;
+import com.example.myapplication.ui.fragments.Logs.LogsFragment;
 import com.example.myapplication.ui.fragments.MainFragment;
 import com.example.myapplication.ui.fragments.ModsFragment;
-
-import java.util.Random;
 
 public class MainActivity extends SingleFragmentActivity {
 

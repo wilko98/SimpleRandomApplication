@@ -7,4 +7,5 @@
     <string name="menu_main_state">Main</string>
     <string name="menu_mods">Mods</string>
     <string name="myLogs">Logs</string>
+    <string name="BtnDelete">delete</string>
 </resources>
