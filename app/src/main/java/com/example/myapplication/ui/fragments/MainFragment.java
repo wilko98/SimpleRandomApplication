@@ -49,10 +49,9 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         mBtnRandomize.setOnClickListener(v->{
             MyLog log = new MyLog();
-            log.setId(mStorage.getAllLogs().size());
+            log.setId(mStorage.getLastId());
             log.setTime(Calendar.getInstance().getTime().toString());
             switch (mPreferences.getInt("mod",1)){
-
                 case 1:
                     String result = mRandom.nextInt(2)+"";
                     mResultText.setText(result);

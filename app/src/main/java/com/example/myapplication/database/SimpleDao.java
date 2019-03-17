@@ -15,6 +15,9 @@ public interface SimpleDao {
     @Query("SELECT * FROM MyLog")
     List<MyLog> getAllLogs();
 
+    @Query("SELECT last_insert_rowid()")
+    int getLastId();
+
     @Insert
     void insert(MyLog myLog);
     

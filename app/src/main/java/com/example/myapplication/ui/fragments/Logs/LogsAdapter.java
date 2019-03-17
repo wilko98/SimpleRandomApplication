@@ -30,7 +30,7 @@ public class LogsAdapter extends BaseAdapter {
         final MyLog log = mListOfLogs.get(position);
         TextView mLogTextView = v.findViewById(R.id.log_text);
         Button mDeleteButton = v.findViewById(R.id.btn_delete);
-        mLogTextView.setText(log.getId()+") "+log.getResult()+"\n"+log.getTime());
+        mLogTextView.setText((log.getId()+1)+") "+log.getResult()+"\n"+log.getTime());
         mDeleteButton.setOnClickListener(v1 -> ((ApplicationSingleton)
                 v1.getContext().getApplicationContext()).getmStorage().deleteLog(log));
 
